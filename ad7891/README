@@ -1,0 +1,5 @@
+Example of AD7891 ADC chip, it is accessed over SPI. Using standard or
+periodic mode.
+
+spi-ad78xx.c           - AD7891 ADC SPI driver
+rtems-spi-ad7891.c     - Example using AD7891 ADC SPI driver

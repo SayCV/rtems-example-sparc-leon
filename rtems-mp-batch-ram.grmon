@@ -1,0 +1,12 @@
+cpu act 0
+del
+cpu act 1
+del
+lo rtems-mp2
+lo rtems-mp1
+ep 0x40400000
+stack 0x407fff00
+cpu act 0
+ep 0x40001000
+stack 0x403fff00
+run

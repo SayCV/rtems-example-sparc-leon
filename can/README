@@ -1,0 +1,6 @@
+
+calc_can_btrs
+-------------
+Help program for Linux to calculate CAN bit timing registers.
+ * OC-CAN
+ * GRCAN

@@ -1,0 +1,4 @@
+v7   - Software MUL/DIV and software Floating point
+v7fp - Software MUL/DIV and using Hardware Floating Point Unit (FPU)
+v8   - Hardware MUL/DIV and software Floating point
+v8fp - Hardware MUL/DIV and using Hardware Floating Point Unit (FPU)

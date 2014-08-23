@@ -1,0 +1,36 @@
+
+This directory contains some sample applications. The following
+make target can be used:
+
+leon3		leon3 processor, soft-float
+leon3fp		leon3 processor, hard-float
+leon3fpv8	leon3 processor, hard-float, V8 mul/div
+leon3v8		leon3 processor, soft-float, V8 mul/div
+erc32		erc32 processor, hard-float
+leon2		leon2 processor, soft-float
+leon2fp		leon2 processor, hard-float
+leon2fpv8	leon2 processor, hard-float, V8 mul/div
+leon2v8		leon2 processor, soft-float, V8 mul/div
+
+NOTE: The paranoia program may report errors when executed on tsim
+on intel hosts. This is due to a bug in paranoia - not the compiler.
+
+Some hints:
+
+* rtems-cdtest is a C++ application that tests exception handling. If you
+  run it on leon hardware using dsumon, remember to start dsumon with -nb
+  to stop dsumon from breaking on forced exceptions.
+
+* rtems-ttcp is a network test program and needs a lot of memory for 
+  network buffers. If you run it on the GR-PCI-XC2V board through the
+  dsumon, start dsumon with -nosram to use the 16 (or 64) Mbyte of
+  sdram rather than the 1 Mbyte of sram.
+
+* rtems-http is a web server demo program. It also includes an
+  ftp server and allows uploading and downloading of files.
+
+* rtems-shell is an demonstraion program for the RTEMS shell.
+  Type help at the prompt to see the available commands.
+
+* config.c Configure driver resources, initializes the Driver Manager
+  and BSP Networking Stack.

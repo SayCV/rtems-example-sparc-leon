@@ -1,0 +1,12 @@
+This is a demo application for one or multiple GR-RASTA-ADCDAC PCI targets. The 
+demo can be compiled for thee different systems:
+ ¤ AT697         (rtems-rasta-adcdac-leon2)
+ ¤ LEON3         (rtems-rasta-adcdac-leon3)
+ ¤ LEON2 GRLIB   (rtems-rasta-adcdac-leon2grlib)
+
+Two different PCI Host controllers are supported and autodetected for LEON2-GRLIB
+and LEON3 systems.
+
+The sample application can be configured from defines in rtems-rasta-adcdac.c 
+to use the GRADCDAC, GPIO and GRETH cores on the Target Board(s). The GRCAN driver
+is loaded but not used, a sample application is available in rtems.grcan.c.
